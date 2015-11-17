@@ -10,6 +10,20 @@ Adds a new debug configuration option that adds more information to unspecific e
 * Magento 1.x
 * PHP 5.4 or higher
 
+## List of Errors
+
+The following errors are handled by this module. They are displayed or logged based on the module configuration (see "Configuration" below):
+
+- 
+    > Filename cannot be empty
+
+	This message appears when a template file is missing, but unfortunately does not tell you anything about the whereabouts. The new message contains the full path of the missing template, the block name and the block class.
+	
+- 
+    > Not valid template file: $fileName
+
+	This message gets silently logged to system.log if symlinks are not allowed and a template is behind a symlink. A common error on fresh installations that use modman. The new message is more explicit.
+	
 ## Installation
 
 1. Manual installation: download [the latest release](https://github.com/schmengler/DebugErrors/zipball/master) and copy the `app` directory into the Magento installation.
