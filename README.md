@@ -1,9 +1,9 @@
 SSE_DebugErrors
 ======
-Adds a new debug configuration option that adds more information to unspecific error messages and .
+Adds a new debug configuration option that adds more information to unspecific error messages and lets you specify how to handle these additional errors.
 
 ## Version 
-* Version 0.2.3
+* Version 0.1.0
 
 ## Requirements ##
 
@@ -20,9 +20,9 @@ Adds a new debug configuration option that adds more information to unspecific e
                 "type": "git",
                 "url": "https://github.com/schmengler/DebugErrors.git"
             }
-        },
+        ],
         "require-dev": {
-            "sse/debug-errors": "~0.1.0"
+            "sse/debugerrors": "~0.1.0"
         }
     
 
@@ -40,7 +40,6 @@ You can also specify how the debug error messages should be logged and displayed
 - **Show exception in block:** Replace current block with exception message (only if error is in context of a block). Also always logs exception to exception.log.
 - **Only log exception to exception log:** Only logs exception to exception.log
 - **Trigger PHP Warning:** Magento handles warnings depending on the environment variable MAGE_IS_DEVELOPER_MODE. If developer mode is on, an exception is thrown and displayed. If not, the warning gets logged to system.log.
--
 
 
 ## Technical Information
