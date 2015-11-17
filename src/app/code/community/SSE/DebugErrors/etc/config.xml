@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * This file is part of SSE_DebugErrors for Magento.
+ *
+ * @license http://opensource.org/licenses/OSL-3.0 Open Software License (OSL 3.0)
+ * @author Fabian Schmengler <fabian@schmengler-se.de> <@fschmengler>
+ * @category SSE
+ * @package SSE_DebugErrors
+ * @copyright Copyright (c) 2015 Schmengler Software Engineering (http://www.schmengler-se.de/)
+ */
+-->
+<config>
+    <modules>
+        <SSE_DebugErrors>
+            <version>0.1.0</version>
+        </SSE_DebugErrors>
+    </modules>
+    <global>
+        <helpers>
+            <sse_debugerrors>
+                <class>SSE_DebugErrors_Helper</class>
+            </sse_debugerrors>
+        </helpers>
+        <models>
+            <sse_debugerrors>
+                <class>SSE_DebugErrors_Model</class>
+            </sse_debugerrors>
+        </models>
+    </global>
+    <global>
+        <events>
+            <core_block_abstract_to_html_before>
+                <observers>
+                    <modulename>
+                        <type>singleton</type>
+                        <class>sse_debugerrors/observer</class>
+                        <method>coreBlockAbstractToHtmlBefore</method>
+                    </modulename>
+                </observers>
+            </core_block_abstract_to_html_before>
+        </events>
+    </global>
+    <default>
+        <dev>
+            <debug>
+                <debug_errors_handler>exception_log</debug_errors_handler>
+            </debug>
+        </dev>
+    </default>
+</config>

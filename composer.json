@@ -1,0 +1,16 @@
+{
+    "name": "sse/debugerrors",
+    "license": "OSL-3.0",
+    "type": "magento-module",
+    "description": "Development tool: Add more information to unspecific error messages",
+    "homepage": "https://github.com/schmengler/DebugErrors",
+    "require": {
+        "php": ">=5.4"
+    },
+    "authors":[
+        {
+            "name":"Fabian Schmengler",
+            "email":"fabian@schmengler-se.de"
+        }
+    ]
+}

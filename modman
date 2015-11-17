@@ -1,0 +1,4 @@
+src/app/code/community/SSE/DebugErrors app/code/community/SSE/DebugErrors
+src/app/design/frontend/base/default/template/sse_debugerrors app/design/frontend/base/default/template/sse_debugerrors
+src/app/design/adminhtml/default/default/template/sse_debugerrors app/design/adminhtml/default/default/template/sse_debugerrors
+src/app/etc/modules/SSE_DebugErrors.xml app/etc/modules/SSE_DebugErrors.xml
