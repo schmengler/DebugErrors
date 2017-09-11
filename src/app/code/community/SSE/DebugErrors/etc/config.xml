@@ -32,11 +32,11 @@
         <events>
             <core_block_abstract_to_html_before>
                 <observers>
-                    <modulename>
+                    <sse_debugerrors>
                         <type>singleton</type>
                         <class>sse_debugerrors/observer</class>
                         <method>coreBlockAbstractToHtmlBefore</method>
-                    </modulename>
+                    </sse_debugerrors>
                 </observers>
             </core_block_abstract_to_html_before>
         </events>
